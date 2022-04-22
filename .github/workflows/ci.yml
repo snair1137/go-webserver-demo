@@ -29,7 +29,7 @@ jobs:
       with: 
      #   context: ./...
         tags: |
-          sugesh1137/go-webserver-demo:${{ github.event.head_commit.message }}
+          sugesh1137/go-webserver-demo
           ${{ steps.metdata.outputs.tags }}
 
         # build on feature branches, only push on main branch 
