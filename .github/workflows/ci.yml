@@ -29,7 +29,7 @@ jobs:
       with: 
      #   context: ./...
         tags: |
-          snair1137/go-webserver-demo:latest
+          sugesh1137/go-webserver-demo:latest
 
         # build on feature branches, only push on main branch 
         push: ${{ github.ref == 'refs/heads/main' }}
