@@ -29,9 +29,8 @@ jobs:
       with: 
      #   context: ./...
         tags: |
-          sugesh1137/go-webserver-demo
-          ${{ steps.metdata.outputs.tags }}
-
+          sugesh1137/go-webserver-demo:${{ github.event.head_commit.message }}
+          
         # build on feature branches, only push on main branch 
         push: ${{ github.ref == 'refs/heads/main' }}
     
